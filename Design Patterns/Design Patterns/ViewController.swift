@@ -19,6 +19,7 @@ class ViewController: UIViewController {
         Strategyies(name: "装饰模式", className: DecoratorPattern()),
         Strategyies(name: "原型模式", className: PrototypePattern()),
         Strategyies(name: "工厂模式", className: FactoryPattern()),
+        Strategyies(name: "抽象工厂模式", className: AbstractFactoryPattern()),
         
     ]
     override func viewDidLoad() {

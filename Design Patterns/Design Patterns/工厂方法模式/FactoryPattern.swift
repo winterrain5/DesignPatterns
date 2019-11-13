@@ -8,17 +8,17 @@
 
 import Foundation
 // ，定义一个用于创建对象的接口，让子类决定实例化哪一个类。工厂方法使一个类的实例化延迟到其子类。
-protocol ElecProduct:CustomStringConvertible {
+protocol AirconditonalProduct:CustomStringConvertible {
     var name:String { get set }
     func use()
 }
 
 protocol Factory {
-    func createProduct() -> ElecProduct?
+    func createProduct() -> AirconditonalProduct?
 }
 
 
-class Gree:ElecProduct,CustomStringConvertible {
+class Gree:AirconditonalProduct,CustomStringConvertible {
     var name: String
     
     required init(name: String) {
@@ -36,7 +36,7 @@ class Gree:ElecProduct,CustomStringConvertible {
 }
 
 class GreeFactory: Factory {
-    func createProduct() -> ElecProduct? {
+    func createProduct() -> AirconditonalProduct? {
         let gree = Gree(name: "格力空调")
         return gree
     }
@@ -45,7 +45,7 @@ class GreeFactory: Factory {
 
 
 
-class MeiDi:ElecProduct,CustomStringConvertible {
+class MeiDi:AirconditonalProduct,CustomStringConvertible {
     var name: String
     
     required init(name: String) {
@@ -63,7 +63,7 @@ class MeiDi:ElecProduct,CustomStringConvertible {
 }
 
 class MeiDiFactory: Factory {
-    func createProduct() -> ElecProduct? {
+    func createProduct() -> AirconditonalProduct? {
         let meidi = MeiDi(name: "美的空调")
         return meidi
     }

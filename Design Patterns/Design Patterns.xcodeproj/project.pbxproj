@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		49571DC3237BE63E0087A055 /* PrototypePattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49571DC2237BE63E0087A055 /* PrototypePattern.swift */; };
+		49571DC6237C026F0087A055 /* AbstractFactoryPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49571DC5237C026F0087A055 /* AbstractFactoryPattern.swift */; };
+		49571DC8237C05D20087A055 /* Suspension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49571DC7237C05D20087A055 /* Suspension.swift */; };
+		49571DCC237C06250087A055 /* Abstract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49571DCB237C06250087A055 /* Abstract.swift */; };
+		49571DCE237C06700087A055 /* CarParts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49571DCD237C06700087A055 /* CarParts.swift */; };
+		49571DD0237C07520087A055 /* Concreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49571DCF237C07520087A055 /* Concreate.swift */; };
+		49571DD2237C07D10087A055 /* Drivetrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49571DD1237C07D10087A055 /* Drivetrain.swift */; };
 		496243382376AB35007D11DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496243372376AB35007D11DC /* AppDelegate.swift */; };
 		4962433A2376AB35007D11DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496243392376AB35007D11DC /* SceneDelegate.swift */; };
 		4962433C2376AB35007D11DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4962433B2376AB35007D11DC /* ViewController.swift */; };
@@ -41,6 +47,12 @@
 
 /* Begin PBXFileReference section */
 		49571DC2237BE63E0087A055 /* PrototypePattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrototypePattern.swift; sourceTree = "<group>"; };
+		49571DC5237C026F0087A055 /* AbstractFactoryPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactoryPattern.swift; sourceTree = "<group>"; };
+		49571DC7237C05D20087A055 /* Suspension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suspension.swift; sourceTree = "<group>"; };
+		49571DCB237C06250087A055 /* Abstract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Abstract.swift; sourceTree = "<group>"; };
+		49571DCD237C06700087A055 /* CarParts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarParts.swift; sourceTree = "<group>"; };
+		49571DCF237C07520087A055 /* Concreate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concreate.swift; sourceTree = "<group>"; };
+		49571DD1237C07D10087A055 /* Drivetrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Drivetrain.swift; sourceTree = "<group>"; };
 		496243342376AB35007D11DC /* Design Patterns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Design Patterns.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		496243372376AB35007D11DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		496243392376AB35007D11DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +106,19 @@
 			path = "原型模式";
 			sourceTree = "<group>";
 		};
+		49571DC4237C024F0087A055 /* 抽象工厂模式 */ = {
+			isa = PBXGroup;
+			children = (
+				49571DD1237C07D10087A055 /* Drivetrain.swift */,
+				49571DC5237C026F0087A055 /* AbstractFactoryPattern.swift */,
+				49571DC7237C05D20087A055 /* Suspension.swift */,
+				49571DCB237C06250087A055 /* Abstract.swift */,
+				49571DCD237C06700087A055 /* CarParts.swift */,
+				49571DCF237C07520087A055 /* Concreate.swift */,
+			);
+			path = "抽象工厂模式";
+			sourceTree = "<group>";
+		};
 		4962432B2376AB35007D11DC = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +142,7 @@
 		496243362376AB35007D11DC /* Design Patterns */ = {
 			isa = PBXGroup;
 			children = (
+				49571DC4237C024F0087A055 /* 抽象工厂模式 */,
 				49571DC1237BE62C0087A055 /* 原型模式 */,
 				49624379237A85C2007D11DC /* 装饰模式 */,
 				4962436A2376CB8A007D11DC /* 工厂方法模式 */,
@@ -327,12 +353,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49571DD2237C07D10087A055 /* Drivetrain.swift in Sources */,
 				4962433C2376AB35007D11DC /* ViewController.swift in Sources */,
+				49571DCE237C06700087A055 /* CarParts.swift in Sources */,
 				496243382376AB35007D11DC /* AppDelegate.swift in Sources */,
 				4962437823792E07007D11DC /* BaseViewController.swift in Sources */,
 				496243692376B566007D11DC /* StrategyPattern.swift in Sources */,
 				4962436C2376CB9F007D11DC /* FactoryPattern.swift in Sources */,
+				49571DCC237C06250087A055 /* Abstract.swift in Sources */,
+				49571DC6237C026F0087A055 /* AbstractFactoryPattern.swift in Sources */,
+				49571DC8237C05D20087A055 /* Suspension.swift in Sources */,
 				49571DC3237BE63E0087A055 /* PrototypePattern.swift in Sources */,
+				49571DD0237C07520087A055 /* Concreate.swift in Sources */,
 				4962433A2376AB35007D11DC /* SceneDelegate.swift in Sources */,
 				4962437B237A85DA007D11DC /* DecoratorPattern.swift in Sources */,
 			);
